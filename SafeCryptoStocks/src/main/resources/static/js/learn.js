@@ -1,4 +1,7 @@
-const BASE_URL = 'http://localhost:8080/api'; // Update with your backend base URL
+//const BASE_URL = 'http://localhost:8080/api'; // Update with your backend base URL
+
+const BASE_URL = "https://athletic-generosity-production.up.railway.app";
+
 const articlesList = document.getElementById('articles');
 const categoryFilters = document.querySelectorAll('#category-filters input[type="radio"]');
 
