@@ -14,8 +14,11 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Apply to all endpoints
-                    .allowedOrigins("http://localhost:3000") // Frontend URL
-                    .allowedMethods("GET", "POST", "PUT", "DELETE") // Allowed HTTP methods
+                    .allowedOrigins(
+                        "http://localhost:3000", // Frontend for local development
+                        "https://athletic-generosity-production.up.railway.app" // Railway domain
+                    )
+                    .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Allowed HTTP methods
                     .allowedHeaders("*") // Allow all headers
                     .allowCredentials(true); // Allow credentials like cookies
             }
