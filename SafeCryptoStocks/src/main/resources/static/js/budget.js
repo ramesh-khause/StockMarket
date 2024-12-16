@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeExpenseModalBtn = document.getElementById("close-expense-modal");
     const logoutButton = document.getElementById('logout-btn');
 
-    const API_BASE_URL = "http://localhost:8080";
+    //const API_BASE_URL = "http://localhost:8080";
+
+     const API_BASE_URL = "https://athletic-generosity-production.up.railway.app";
     let currentBudgetId = null;
 
     // Helper functions
